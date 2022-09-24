@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Cards</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .cont {
+      background-color: rgba(191, 191, 191, 0.219);
+    }
+    .box {
+      display: flex;
+      padding: 40px;
+    }
+    .card_one,
+    .card_two,
+    .card_three,
+    .card_four {
+      width: 250px;
+      height: 400px;
+      background-color: rgb(254, 254, 254);
+      border: 1px solid black;
+      border: none;
+      margin-left: 20px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 1px -1px 18px -4px rgba(34, 60, 80, 0.16);
+      cursor: pointer;
+    }
+    h3 {
+      text-transform: uppercase;
+      /*border-bottom: 4px solid rgba(196, 39, 76, 0.892);*/
+    }
+    .line1 {
+      border: 2px solid rgba(196, 39, 76, 0.892);
+      margin-bottom: 10px;
+    }
+    .line2 {
+      border: 2px solid rgba(196, 167, 39, 0.892);
+      margin-bottom: 10px;
+    }
+    .line3 {
+      border: 2px solid rgba(39, 144, 196, 0.892);
+      margin-bottom: 10px;
+    }
+    .line4 {
+      border: 2px solid rgba(39, 196, 91, 0.892);
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 45px;
+      opacity: 0.9;
+      padding: 0;
+      margin: 0;
+    }
+    .per {
+      opacity: 0.4;
+      margin: 0;
+    }
+    .text {
+      margin: 30px 0px 30px 0px;
+    }
+    button {
+      width: 100px;
+      color: aliceblue;
+      border: none;
+      border-radius: 5px;
+      padding: 15px;
+      cursor: pointer;
+    }
+    #btm1 {
+      background-color: rgba(196, 39, 76, 0.892);
+    }
+    #btm2 {
+      background-color: rgba(196, 167, 39, 0.892);
+    }
+    #btm3 {
+      background-color: rgba(39, 144, 196, 0.892);
+    }
+    #btm4 {
+      background-color: rgba(39, 196, 91, 0.892);
+    }
+    hr {
+      height: 4px;
+      border: none;
+      background-color: rgba(196, 39, 76, 0.892);
+    }
+
+    .card_one:hover,
+    .card_two:hover,
+    .card_three:hover,
+    .card_four:hover {
+      transform: scale(1.1);
+      transition: 1s;
+    }
+  </style>
+
+  <body>
+    <div class="cont">
+      <div class="box">
+        <div
+          class="card_one"
+          onmouseover="hoverOnOne()"
+          onmouseout="hoverOffOne()"
+          id="card_one"
+        >
+          <h3>Enterprise</h3>
+          <div class="line1"></div>
+          <b><p class="price">$69</p></b>
+          <b><p class="per">per mounth</p></b>
+          <div class="text">
+            <b><p>10GB disc space</p></b>
+            <b><p>100GB monthly bandwidth</p></b>
+            <b><p>20 email accounts</p></b>
+            <b><p>Unlimited subdomens</p></b>
+          </div>
+
+          <button type="submit" id="btm1" name="submit">BUY</button>
+        </div>
+
+        <div
+          class="card_two"
+          onmouseover="hoverOnTwo()"
+          onmouseout="hoverOffTwo()"
+          id="card_two"
+        >
+          <h3>Professional</h3>
+          <div class="line2"></div>
+          <b><p class="price">$29</p></b>
+          <b><p class="per">per mounth</p></b>
+          <div class="text">
+            <b><p>10GB disc space</p></b>
+            <b><p>100GB monthly bandwidth</p></b>
+            <b><p>20 email accounts</p></b>
+            <b><p>Unlimited subdomens</p></b>
+          </div>
+
+          <button type="submit" id="btm2" name="submit">BUY</button>
+        </div>
+        <div
+          class="card_three"
+          onmouseover="hoverOnThree()"
+          onmouseout="hoverOffThree()"
+          id="card_three"
+        >
+          <h3>Standart</h3>
+          <div class="line3"></div>
+          <b><p class="price">$19</p></b>
+          <b><p class="per">per mounth</p></b>
+          <div class="text">
+            <b><p>10GB disc space</p></b>
+            <b><p>100GB monthly bandwidth</p></b>
+            <b><p>20 email accounts</p></b>
+            <b><p>Unlimited subdomens</p></b>
+          </div>
+
+          <button type="submit" id="btm3" name="submit">BUY</button>
+        </div>
+        <div
+          class="card_four"
+          onmouseover="hoverOnFour()"
+          onmouseout="hoverOffFour()"
+          id="card_four"
+        >
+          <h3>Basic</h3>
+          <div class="line4"></div>
+          <b><p class="price">$9</p></b>
+          <b><p class="per">per mounth</p></b>
+          <div class="text">
+            <b><p>10GB disc space</p></b>
+            <b><p>100GB monthly bandwidth</p></b>
+            <b><p>20 email accounts</p></b>
+            <b><p>Unlimited subdomens</p></b>
+          </div>
+
+          <button type="submit" id="btm4" name="submit">BUY</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

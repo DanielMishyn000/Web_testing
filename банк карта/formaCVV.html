@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      margin-top: 30px;
+    }
+    .wrap {
+      width: 600px;
+
+      background-color: #419390ae;
+      border-radius: 15px;
+      padding: 0px 0px 0px 25px;
+      position: absolute;
+      box-shadow: -19px -16px 12px -8px rgba(39, 184, 177, 0.33);
+    }
+    .form {
+      display: flex;
+      justify-content: center;
+    }
+    h3 {
+      width: 480px;
+      color: white;
+      background-color: rgb(255, 132, 0);
+      border-radius: 5px;
+      padding: 10px 0px 10px 50px;
+      text-transform: uppercase;
+      position: relative;
+      top: 0px;
+      left: -50px;
+      box-shadow: -13px 1px 9px 0px rgba(244, 97, 0, 0.37);
+    }
+    .icon {
+    }
+    img {
+      width: 350px;
+      height: 350px;
+      position: absolute;
+      bottom: -70px;
+      right: -110px;
+    }
+    p {
+      opacity: 0.5;
+      width: 150px;
+    }
+    input {
+      color: rgba(52, 55, 54, 0.522);
+      background-color: #c5d3d3be;
+      padding: 10px 0px 10px 5px;
+      border: none;
+      border-bottom: 1px solid grey;
+      opacity: 0.6;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+    #NumberCard,
+    #Namecard {
+      width: 300px;
+    }
+    #NumberCard {
+      font-size: 14px;
+    }
+    #cvv {
+      width: 70px;
+    }
+    #date {
+      width: 120px;
+    }
+    .container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .container1 {
+      padding-bottom: 20px;
+    }
+    button {
+      width: 200px;
+      padding: 10px;
+      margin: 0px 0px 30px 100px;
+      text-align: center;
+      justify-content: center;
+      color: rgb(255, 132, 0);
+      background-color: #ffffffae;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.2),
+        4px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+    button:hover {
+      background-color: rgba(132, 244, 207, 0.599);
+      /*box-shadow: -4px -4px 4px rgba(213, 246, 235, 0.599),
+        4px 4px 4px rgba(0, 0, 0, 0.1);*/
+      transition: 1s;
+      color: grey;
+    }
+    h4 {
+      color: rgb(255, 187, 0);
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <h4>Мишин Данил</h4>
+    <div class="form">
+      <div class="wrap">
+        <h3>Credit Card Details</h3>
+
+        <div class="container">
+          <div class="cont">
+            <div class="icon">
+              <img src="moon_flag.png" />
+            </div>
+            <p>Card Number</p>
+            <input
+              type="text"
+              id="NumberCard"
+              name="cardNumber"
+              placeholder="      - - - -         - - - -        - - - -        - - - -   "
+            />
+            <p>Name on Card</p>
+            <input
+              type="text"
+              id="Namecard"
+              name="cardName"
+              placeholder=" Name Surname "
+            />
+            <div class="container1">
+              <p>Expiry Date</p>
+              <input type="date" id="date" name="expiryDateDay" />
+
+              <p>CVV/CVN</p>
+              <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="     * * *  "
+              />
+            </div>
+            <button type="submit" id="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var dateControl = document.querySelector('input[type="date"]');
+      dateControl.value = "2017-06-01";
+    </script>
+  </body>
+</html>

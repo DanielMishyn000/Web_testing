@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+<style>
+        body { 
+        display: flex;
+         height: 100vh;
+        }
+        #calculator { 
+            margin: auto; 
+            padding: 10px;
+            background: -webkit-linear-gradient(top, rgba(255,175,75,1) 39%,rgba(255,146,10,1) 64%); 
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+        }
+        #display, button {
+            width: 100px;
+            padding: 10px;
+            padding-top: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font: bold 3em Impact;
+            font-size: 24px;
+            outline: none;
+            text-align: center;
+            background: -webkit-linear-gradient(top, rgba(255,175,75,1) 39%,rgba(255,146,10,1) 64%);
+            color: white; 
+        }
+        #display {
+            width: 510px;
+            
+        }
+        input {
+            width: 90%;
+            height: 40px;
+            margin: 0px 0px 10px 0px;
+            background-color: #FFFFFF;
+            opacity: 0.5;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 30px;
+
+        }
+        button:hover{
+            cursor: pointer;
+             
+        }
+        h2 {
+            text-align: center;
+            color: white;
+
+        }
+
+</style>
+
+    <div id="calculator">
+              <h2>Calculator</h2>
+        <div id="display">
+            <input id="input" type="text" name="tableNamber">
+              <button onclick="press('7')"><b>7</b></button>
+              <button onclick="press('8')"><b>8</b></button>
+              <button onclick="press('9')"><b>9</b></button>
+              <button onclick="press('+')"><b>+</b></button>
+              <button onclick="press('4')"><b>4</b></button>
+              <button onclick="press('5')"><b>5</b></button>
+              <button onclick="press('6')"><b>6</b></button>
+              <button onclick="press('-')"><b>-</b></button>
+              <button onclick="press('1')"><b>1</b></button>
+              <button onclick="press('2')"><b>2</b></button>
+              <button onclick="press('3')"><b>3</b></button>
+              <button onclick="press('*')"><b>*</b></button>
+              <button onclick="clear1()"><b>C</b></button>
+              <button onclick="press('0')"><b>0</b></button>
+              <button onclick="calc()"><b>=</b></button>
+              <button onclick="press('/')"><b>/</b></button>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    let display = document.getElementById("input");
+
+    function clear1() {
+        display.value = "";
+
+    }
+    function calc() {
+        display.value = eval(display.value);
+
+    }
+    function press(x) {
+        display.value += x;
+
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма Заказа пицци</title>
+</head>
+
+<style>
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		
+	}
+	body {
+		background-image: url(фон-11.png);
+	}
+	h1{
+		color: white;
+
+	}
+	
+	label {
+		display: inline-block;
+		width: 70px;
+		text-align: right;
+	}
+	form li {
+		margin-top: 15px;
+	}
+	form {
+		width: 400px;
+		padding: 10px;
+		border: 1px solid black;
+		border-radius: 4px;
+	}
+	textarea {
+		vertical-align: top;
+	}
+	button {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		font-size: 15px;
+		padding: 10px;
+		width: 100px;
+		margin-top: 20px;
+	}
+
+	
+</style>
+
+<body>
+<div class="cont">
+	
+	<form>
+		<h1>Sushi Chinoise Menu</h1>
+		<ul>
+			<li>
+				<label for="name">Name:</label>
+					<input type="text" id="name" value="">	
+			</li>
+			<li>
+				<label for="adress">Adress:</label>
+					<input type="text" id="adress" value="">				
+			</li>
+			<li>
+				<label for="phone">Number Phone:</label>
+					<input type="tel" id="phone" value="">
+			</li>
+			<li>
+				<label for="email">Email:</label>
+					<input type="email" id="email" value="">		
+			</li>
+			
+			<li>
+				<label for="nameSushi">Amount sticks:</label>
+						<select id="nameSushi" name="nameSushi">
+							<option>2</option>
+							<option>4</option>
+							<option>6</option>
+							<option>8</option>
+							<option>10</option>
+						</select>
+			</li>
+			<li>
+				<fieldset>
+					<legend>Type of sticks:</legend>
+					<ul>
+						<li>
+							<input type="radio" id="ordinary" name="type" value="ordinary sticks" checked>
+							<span>ordinary sticks</span>
+						</li>
+						<li>
+							<input type="radio" id="training" name="type" value="training sticks">
+							<span>training sticks</span>
+						</li>
+					</ul>
+				</fieldset>
+			</li>
+			<li>
+				<label for="typeSushi">Name of Sushi</label>
+					<select name="nameSushi" id="nameSushi">
+						<option value="">Эби гункан</option>
+						<option value="">Спайси хотате гункан</option>
+						<option value="">Спайси магуро гункан</option>
+						<option value="">Икура гункан</option>
+					</select>
+			</li>
+			<li>
+				<p>Do you need napkins?:</p>
+				<label for="yes">Yes 
+					<input type="radio" id="yes" name="yes" value="yes" checked>
+				</label>
+					
+				<label for="no">No
+					<input type="radio" id="yes" name="no" value="no">
+				</label>	
+			</li>
+			<li>
+				<label for="textarea">Add any comments:</label>
+					
+					<textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+			
+			</li>
+			<button type="submit" id="btm">Send</button>
+		</ul>
+		
+	</form>
+</div>
+	
+	
+</body>
+</html>

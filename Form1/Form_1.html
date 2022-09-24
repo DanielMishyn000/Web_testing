@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>DZ STEP</title>
+</head>
+<style>
+    body {
+        background-color: rgb(42, 155, 155);
+        margin-top: 50px;
+        
+    }
+    .container {
+        width: 440px;
+        margin-left: 500px;
+       
+    }
+    h3 {
+        color: rgba(121, 79, 0, 0.684);
+        font-size: 24px;
+    }
+    
+    .forma1 {
+        background: linear-gradient(to bottom, rgba(236,232,157,1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);
+        width: 440px;
+        box-sizing: border-box;
+        border: 0.5px solid black;
+        box-shadow: 0px 0px 10px 0px black;
+        border-radius: 10px;
+    }
+    ul {
+        
+       padding-left: 0px;
+    }
+   form {
+    text-align: center;
+   }
+    li {
+        margin-top: 20px;
+        list-style:none; 
+    }
+    
+    input {
+        text-align: center;
+        padding: 20px 100px 20px 100px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+    }
+    input::placeholder {
+        opacity: 0.4;
+    }
+    #submitBtm {
+        padding: 10px 145px 10px 145px;
+        color: white;
+        background-color: rgba(52, 181, 164, 0.547);
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    #submitBtm:hover {
+        background-color: rgba(112, 26, 99, 0.481);
+        transition: 0.5s;
+    }
+    span {
+        color: rgb(39, 58, 51);
+        font-size: 18px;
+        line-height: 50px;
+        
+         
+    }
+    .password {
+        color: rgb(191, 213, 193);
+        padding: 20px 0px 20px 0px;
+    }
+    .password:hover {
+        color: rgb(230, 245, 240);
+        transition: 0.5s;
+    }
+    .login {
+        text-align: center;
+        margin: 20px 0px 20px 0px ;
+        
+    }
+    
+    .socialPage {
+        width: 440px;
+        margin-left: 20px;
+    }
+    
+    .button1 {
+
+        background-color: rgb(37, 64, 234);
+        width: 180px;
+        color: white;
+        float: left;
+        padding: 10px 0px 10px 0px;
+        font-size: 20px;
+        box-shadow: 0px 0px 10px 0px black;
+        border-radius: 10px;
+    }
+    
+    .button2 {
+        background-color: rgb(59, 149, 218);
+        width: 180px;
+        color: white;
+        padding: 10px 0px 10px 0px;
+        font-size: 20px;
+        box-shadow: 0px 0px 10px 0px black;
+        border-radius: 10px;
+    }
+    .button1:hover {
+        background-color: rgb(11, 61, 99);
+        transition: 1s;
+    }
+    .button2:hover {
+        background-color: rgb(1, 71, 124);
+        transition: 1s;
+    }
+    
+    .buttonlogin {
+        font-size: 20px;
+    }
+    .img1 {
+        padding-right: 20px;
+        width: 20px;
+        vertical-align: -2px;
+    }
+    .img2 {
+        padding-right: 20px;
+        width: 20px;
+        vertical-align: -2px;
+    }
+</style>
+<body>
+    
+    <div class="container">
+       
+    <div class="forma1">
+        
+        <form>
+            <h3>Member Login</h3>
+        <ul>
+        <li>
+          <label>
+            <input placeholder = "Username" type="email" id="email" name="userEmail" />
+          </label>
+        </li>
+        <li>
+          <label>
+            
+            <input placeholder="Password"  type="password" id="password" name="userPassword" />
+          </label>
+        </li>
+        <li id="button"> 
+            <input class="buttonlogin" id="submitBtm" type="submit" value="Login">
+        </li>
+       
+      </ul>
+      <div class="password"><b>Fogot password?</b></div>
+     </form>
+    </div>
+   <div class="login"><span>... or log in with:</span></div>
+
+   <div class="socialPage">
+
+        <form   class="social" action="https://uk-ua.facebook.com/" target="_blank">
+            <button  class="button1" ><img class="img1" src="facebook.png" alt="">Facebook</button>
+        </form>
+        
+        <form class="social2" action="https://twitter.com/login?lang=ru" target="_blank">
+            <button class="button2"><img class="img2" src="free-icon-twitter-1384174.png" alt="">Twitter</button>
+        </form>
+    </div>  
+       
+    </div>
+    
+   
+
+</body>
+</html>

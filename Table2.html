@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <style>
+    body {
+      background-color: rgb(239, 236, 236);
+      margin-top: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 800px;
+      height: 400px;
+      margin: auto;
+    }
+
+    col:nth-child(odd) {
+      background-color: rgb(210, 208, 208);
+    }
+
+    .col-1 {
+      width: 20%;
+    }
+
+    .col-2 {
+      width: 10%;
+    }
+    .col-3 {
+      width: 10%;
+    }
+    .col-4 {
+      width: 10%;
+    }
+    .col-5 {
+      width: 10%;
+    }
+
+    th {
+      font-size: 18px;
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    th:first-child {
+      background-color: #82abc5;
+    }
+    th:nth-child(2) {
+      background-color: #5a8fb0;
+    }
+    th:nth-child(3) {
+      background-color: #36769e;
+    }
+    th:nth-child(4) {
+      background-color: #1c628d;
+    }
+    th:last-child {
+      background-color: #054f7c;
+    }
+
+    tr:nth-child(odd) {
+      background-color: rgba(177, 173, 173, 0.376);
+    }
+    td {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    span {
+      border: 0, 5px solid black;
+      padding: 7px;
+      border-radius: 5%;
+      box-shadow: 0 0 2px inset;
+    }
+    span:hover {
+      background-color: rgb(191, 199, 199);
+      transition: 0.5s ease;
+    }
+  </style>
+  <body>
+    <table>
+      <colgroup>
+        <col class="col-1" />
+        <col class="col-2" />
+        <col class="col-3" />
+        <col class="col-4" />
+        <col class="col-5" />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>Choose your plan</th>
+          <th>
+            starter<br /><br /><font size="5">$10</font><br />
+            per mounth
+          </th>
+          <th>
+            econom <br /><br /><font size="5">$30</font><br />
+            per month
+          </th>
+          <th>
+            standart<br /><br /><font size="5">$59</font><br />
+            per month
+          </th>
+          <th>
+            professional<br /><br /><font size="5">$99</font><br />
+            per month
+          </th>
+        </tr>
+      </thead>
+      <body>
+        <tr>
+          <td>Amount of space</td>
+          <td>20GB</td>
+          <td>40GB</td>
+          <td>110GB</td>
+          <td>Unlimited</td>
+        </tr>
+
+        <tr>
+          <td>Bandwidth per month</td>
+          <td>120GB</td>
+          <td>240GB</td>
+          <td>610GB</td>
+          <td>1300GB</td>
+        </tr>
+        <tr>
+          <td>Email accounts</td>
+          <td>1</td>
+          <td>15</td>
+          <td>60</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <td>MySQL Database</td>
+          <td>1</td>
+          <td>15</td>
+          <td>60</td>
+          <td>Unlimited</td>
+        </tr>
+        <tr>
+          <td>25h support</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Support tickets per month</td>
+          <td>2</td>
+          <td>6</td>
+          <td>14</td>
+          <td>20</td>
+        </tr>
+      </body>
+
+      <tr>
+        <td></td>
+        <td><span>START</span></td>
+        <td><span>START</span></td>
+        <td><span>START</span></td>
+        <td><span>START</span></td>
+      </tr>
+    </table>
+  </body>
+</html>

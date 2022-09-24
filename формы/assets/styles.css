@@ -1,0 +1,83 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+    background-color: chocolate;
+    color: rgb(255, 255, 255);
+    
+}
+
+h1{
+    font-size: 2em;
+    border-bottom: dotted 2px #fff;
+    padding-bottom: 5px;
+}
+
+article {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    font-size: 40px;
+}
+
+select[type="goal"] {
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    color: lightseagreen;
+    
+    box-shadow: 0 0 3px #fff;
+    padding: 7px;
+}
+
+option {
+    font-size: large;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.subform {
+    font-size: 1.1em;
+    color: #fff;
+    
+}
+
+.subform lable {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    text-align: left;
+
+    font-weight: bold;
+}
+
+.subform input[type="submit"]{
+    margin-left: 246px;
+    padding: 10px 20px;
+    font-size: 12px;
+    background: lightsalmon;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #fff;
+    color: #fff;
+}
+
+.subform input[type="radio"]{
+    margin-left: 30px;
+}
+
+
+.subform input[type="text"], .subform input[type="email"], .subform textarea{
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    color: lightseagreen;
+    font-size: 1.1em;
+    box-shadow: 0 0 3px #fff;
+    padding: 7px;
+ 
+}
+
