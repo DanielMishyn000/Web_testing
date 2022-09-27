@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TOP MENU</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(237, 233, 233);
+      text-align: center;
+    }
+    .container {
+      height: 100%;
+      font-size: 20px;
+    }
+
+    ul {
+      border: 0.5px solid rgb(19, 58, 19);
+    }
+
+    li {
+      border-right: 0.5px solid black;
+      transition: 0.5s;
+    }
+
+    .menu a {
+      text-decoration: none;
+    }
+    .menu li {
+      list-style: none;
+      position: relative;
+    }
+
+    .menu-list {
+      display: flex;
+      background-color: rgb(71, 154, 39);
+      height: 50px;
+      line-height: 50px;
+      padding-left: 0px;
+    }
+
+    .menu-list > li {
+      padding: 0px 40px 0px 40px;
+    }
+    .menu-list > li:hover .sub-menu-list {
+      display: block;
+    }
+    .menu-list > li:hover {
+      background-color: rgb(32, 81, 32);
+    }
+    ul {
+      transition: 0.1s;
+    }
+    .menu-link {
+      color: white;
+    }
+    .sub-menu-list {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 20;
+      padding: 0px 0px 0px 0px;
+      min-width: 164px;
+      border-right: 0.5px solid black;
+    }
+    .sub-menu-list > li {
+      background-color: rgb(71, 154, 39);
+      border-bottom: 0.5px solid rgb(12, 70, 12);
+    }
+    .sub-menu-list > li:hover .sub-sub-menu-list {
+      display: block;
+    }
+    .sub-menu-list > li:hover {
+      background-color: rgb(32, 81, 32);
+    }
+    .sub-menu-link {
+      color: white;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+    .sub-sub-menu-list {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      padding: 0px 0px 0px 0px;
+      min-width: 150px;
+    }
+    .sub-sub-menu-list > li {
+      background-color: rgb(71, 154, 39);
+      border-bottom: 0.5px solid rgb(12, 70, 12);
+    }
+    .sub-sub-menu-link {
+      color: white;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+    .sub-sub-menu-list > li:hover {
+      background-color: rgb(32, 81, 32);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="menu-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="menu-link">Categories</a>
+            <ul class="sub-menu-list">
+              <li>
+                <a href="#" class="sub-menu-link">Man</a>
+              </li>
+              <li>
+                <a href="#" class="sub-menu-link">Women</a>
+                <ul class="sub-sub-menu-list">
+                  <li>
+                    <a href="#" class="sub-sub-menu-link">Dress</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-sub-menu-link">Pants</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sub-sub-menu-link">Shoes</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="sub-menu-link">Kids</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" class="menu-link">About</a></li>
+          <li><a href="#" class="menu-link">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>MyList</title>
+  <style>
+    body {
+        width: 600px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+    }
+    #elem1  {
+      background-color: aqua;
+      
+    }
+    
+    span {
+      line-height: 50px;
+      margin-left: 20px;
+      margin-right: 480px;
+      
+      
+    }
+    
+   
+    li:nth-child(odd) {
+      background: #f0f0f0;
+      
+    }
+    li:nth-child(even) {
+      background-color: rgb(200, 194, 194);
+    }
+    ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+     }
+li {
+  list-style-image: url(stopsquarebuttonformediainterface_87472.ico);
+ }
+
+   
+   
+ <i class="fa-regular fa-square"></i>
+    
+   
+
+  </style>
+ </head>
+ <body>
+  <h1>My To Do List</h1>
+    <ul class="icon">
+        <li><span>Hit the Gym</span></li>
+        <li id="elem1"><span><strike>Pay bills</strike></span>✖</li>
+        <li><span>Meet John</span></li>
+        <li><span>Buy eggs</span></li>
+        <li id="elem1"><span><strike>Read a book</strike></span></li>
+        <li><span>Organize office</span></li>
+        <li><span>Eat dinner</span></li>
+        <li><span>Buy apple</span></li>
+        <li><span>Meet George</span></li>
+        <li><span>Feed the cat</span></li>
+        <li id="elem1"><span><del>Write the letter</del></span></li>
+        <li><span>Run 1km</span></li>
+    </ul>
+    
+ </body>
+</html>

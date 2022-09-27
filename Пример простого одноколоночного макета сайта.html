@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Primer</title>
+ </head>
+<style>
+#wrapper {
+    width: 800px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #484848;
+}
+#menu a {
+    margin: 0 5px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    font: bold 14px Arial;
+}
+#menu a:hover, #menu a.active {
+    color: #484848;
+    background-color: #fff;
+}
+
+#content {
+    padding: 0 30px 20px;
+}
+#content h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#content p {
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font: 18px/1.3 Arial;
+    text-align: justify;
+}
+</style>
+<div id="wrapper">
+    <div id="menu">
+        <a href="#">link text 1</a>
+        <a href="#" class="active">link text 2</a>
+        <a href="#">link text 3</a>
+        <a href="#">link text 4</a>
+        <a href="#">link text 5</a>
+    </div>
+    <div id="content">
+        <h1>Proin tristique lorem</h1>
+        <p>
+            ...
+        </p>
+        <p>
+            ...
+        </p>
+    </div>
+</div>
+ </body>
+</html>
